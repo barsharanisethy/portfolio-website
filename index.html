@@ -5,6 +5,16 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Barsha Portfolio</title>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "eQ__zq9qL0pEn8S7P",
+      });
+   })();
+</script>
   <style>
     /* ===== fonts & reset ===== */
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
@@ -306,7 +316,7 @@
   <!-- CONTACT -->
   <section id="contact" class="container">
     <h3 class="section-title">Contact</h3>
-    <p class="muted" style="text-align:center;margin-bottom:18px">Send a message — this demo won't actually send emails but shows a success toast.</p>
+    <p class="muted" style="text-align:center;margin-bottom:18px">Send a message.</p>
     <form class="contact-form card" id="contactForm" onsubmit="return false;">
       <input id="name" type="text" placeholder="Your name" required>
       <input id="email" type="email" placeholder="Your email" required>
@@ -316,6 +326,17 @@
         <div id="formStatus" style="color:#bffef0;font-weight:600"></div>
       </div>
     </form>
+  
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">(function(){
+    emailjs.init("eQ__zq9qL0pEn8S7P");
+  })();
+  </script>
+  <script src="app.js"></script>
+</form>
+    </div>
+  </body>
+  <script type="text/javascript" src="app.js"></script>
   </section>
 
   <!-- back to top -->
@@ -423,5 +444,8 @@
     /* ===== small accessibility: close mobile nav with ESC ===== */
     window.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') nav.classList.remove('open') });
   </script>
+  
+
 </body>
+
 </html>
